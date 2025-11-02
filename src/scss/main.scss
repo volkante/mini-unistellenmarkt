@@ -1,0 +1,12 @@
+// 7–1 pattern kök importları
+@use './abstracts/variables';
+@use './base/reset';
+@use './base/typography';
+@use './layout/navigation';
+@use './layout/footer';
+@use './components/buttons';
+@use './components/cards';
+
+
+// Geçici bir test stili:
+body { padding: 2rem; }

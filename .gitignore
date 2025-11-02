@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.cache/
+.temp/
+
+# Env / system
+.env
+.DS_Store
+Thumbs.db
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+
+# Optional: macOS metadata
+._*
