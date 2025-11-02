@@ -1,12 +1,35 @@
-// 7–1 pattern kök importları
-@use './abstracts/variables';
-@use './base/reset';
-@use './base/typography';
-@use './layout/navigation';
-@use './layout/footer';
-@use './components/buttons';
-@use './components/cards';
+// 1) Proje değişkenleri (override'lar)
+@import './abstracts/variables';
 
+// 2) Bootstrap (parça parça veya tek seferde)
+// Parça parça:
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/alert";
 
-// Geçici bir test stili:
-body { padding: 2rem; }
+// 3) Kendi 7–1 katmanlarımız (hepsi import)
+@import './base/reset';
+@import './base/typography';
+@import './layout/navigation';
+@import './layout/footer';
+@import './components/buttons';
+@import './components/cards';
+
+// 4) En sonda küçük genel kural (istersen)
+body { padding-block: 2rem; }
+
