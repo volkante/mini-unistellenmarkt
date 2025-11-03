@@ -1,28 +1,10 @@
-// 1) Proje değişkenleri (override'lar)
+// 1) Override'lar önce
 @import './abstracts/variables';
 
-// 2) Bootstrap (parça parça veya tek seferde)
-// Parça parça:
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
-@import "bootstrap/scss/type";
-@import "bootstrap/scss/images";
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
-@import "bootstrap/scss/helpers";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/card";
-@import "bootstrap/scss/navbar";
-@import "bootstrap/scss/forms";
-@import "bootstrap/scss/dropdown";
-@import "bootstrap/scss/alert";
+// 2) Bootstrap (node_modules'tan)
+@import "~bootstrap/scss/bootstrap";
 
-// 3) Kendi 7–1 katmanlarımız (hepsi import)
+// 3) Kendi katmanların (tamamı @import)
 @import './base/reset';
 @import './base/typography';
 @import './layout/navigation';
@@ -30,6 +12,6 @@
 @import './components/buttons';
 @import './components/cards';
 
-// 4) En sonda küçük genel kural (istersen)
+// küçük bir global kural
 body { padding-block: 2rem; }
 
